@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="answer">
+            <input id="display" type="text">
+        </div>
+        <div class="buttonss">
+            <div>
+                <button id="action" onclick="clearall()">AC</button>
+                <button id="action" onclick="delete_value()">DEL</button>
+                <button id="operator" onclick="addToInput('%')">%</button>
+                <button id="operator" onclick="addToInput('/')">/</button>
+            </div>
+            <div>
+                <button onclick="addToInput(7)">7</button>
+                <button onclick="addToInput(8)">8</button>
+                <button onclick="addToInput(9)">9</button>
+                <button id="operator" onclick="addToInput('*')">*</button>
+            </div>
+            <div>
+                <button onclick="addToInput(4)">4</button>
+                <button onclick="addToInput(5)">5</button>
+                <button onclick="addToInput(6)">6</button>
+                <button id="operator" onclick="addToInput('-')">-</button>
+            </div> 
+            <div>
+                <button onclick="addToInput(1)">1</button>
+                <button onclick="addToInput(2)">2</button>
+                <button onclick="addToInput(3)">3</button>
+                <button id="operator" onclick="addToInput('+')">+</button>
+            </div>
+            <div>
+                <button onclick="addToInput('00')">00</button>
+                <button onclick="addToInput(0)">0</button>
+                <button onclick="addToInput('.')">.</button>
+                <button id="equal" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
